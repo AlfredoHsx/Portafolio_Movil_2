@@ -28,3 +28,4 @@ data class MarsPhoto(
     @SerialName(value = "img_src")
     val imgSrc: String
 )
+//@Serializable indica que es un objeto que se puede serializar y des-serializar.

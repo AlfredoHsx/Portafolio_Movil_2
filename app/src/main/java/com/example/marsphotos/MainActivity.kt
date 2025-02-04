@@ -17,6 +17,7 @@
 package com.example.marsphotos
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -25,7 +26,10 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.example.marsphotos.ui.MarsPhotosApp
 import com.example.marsphotos.ui.theme.MarsPhotosTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+//@AndroidEntryPoint indica que Hilt se encargará de la inyección de dependencias dentro de MainActivity.
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
