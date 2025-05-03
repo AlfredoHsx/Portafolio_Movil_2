@@ -223,6 +223,9 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+
+
+
     //Informacion de la SIM
     @RequiresApi(Build.VERSION_CODES.Q)
     private fun getCurrentSignalStrength(): Int {
